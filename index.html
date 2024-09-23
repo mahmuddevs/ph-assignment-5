@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -10,8 +10,19 @@
 </head>
 
 <body>
-    <header>
-
+    <header class="">
+        <div>
+            <button class="btn bg-primary color-[#111111] font-semibold text-xl px-8">Blog</button>
+            <div>
+                <img src="/assets/logo.png" alt="">
+                <h2 class="font-semibold">Donate Bangladesh</h2>
+            </div>
+            <div>
+                <img src="/assets/coin.png" alt="">
+                <div>5500</div>
+                <div>BDT</div>
+            </div>
+        </div>
     </header>
     <main>
 
@@ -25,9 +36,20 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        primary: '#B4F461'
                     }
                 }
-            }
+            },
+            plugins: [
+                function ({ addBase }) {
+                    addBase(
+                        {
+                            'h2': { color: '#111111', fontSize: '20px', fontWeight: 700 },
+                            'p': { fontSize: '1rem', fontWeight: 300, lineHeight: "26px" }
+                        }
+                    )
+                }
+            ],
         }
     </script>
 </body>
