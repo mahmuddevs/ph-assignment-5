@@ -5,29 +5,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate Bangladesh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .card-img {
+            max-width: none !important;
+        }
+    </style>
 </head>
 
-<body>
-    <header class="">
-        <div>
-            <button class="btn bg-primary color-[#111111] font-semibold text-xl px-8">Blog</button>
-            <div>
-                <img src="/assets/logo.png" alt="">
-                <h2 class="font-semibold">Donate Bangladesh</h2>
-            </div>
-            <div>
-                <img src="/assets/coin.png" alt="">
-                <div>5500</div>
-                <div>BDT</div>
+<body style="font-family: Lexend, sans-serif">
+    <header>
+        <div class="py-6 bg-[#F9F7F3]">
+            <div
+                class="w-11/12 md:container xl:w-8/12 mx-auto flex flex-col md:flex-row items-center md:justify-between gap-4 md:gap-0">
+                <button
+                    class="px-6 pt-1 pb-2 bg-primary color-[#111111] font-semibold text-xl border border-white rounded-lg">Blog</button>
+                <div class="flex items-center gap-4">
+                    <img src="/assets/logo.png" alt="">
+                    <h2 class="font-semibold">Donate Bangladesh</h2>
+                </div>
+                <div class="flex items-center gap-4">
+                    <img src="/assets/coin.png" alt="">
+                    <div class="flex gap-2 text-[#111111]/70 text-xl font-medium">
+                        <div>5500</div>
+                        <div>BDT</div>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="flex justify-center gap-4 mt-12 mb-2">
+            <button
+                class="px-6 pt-2 pb-3 bg-primary color-[#111111] font-semibold text-xl border border-white rounded-lg">Donation</button>
+            <button
+                class="px-6 pt-2 pb-3 bg-[transparent] color-[#111111]/70 font-semibold text-xl border border-[#111111]/30 rounded-lg">History</button>
+        </div>
     </header>
-    <main>
-
+    <main class="w-11/12 md:container xl:w-8/12 mx-auto">
+        <div class="flex flex-col md:flex-row gap-6 border border-[#111111]/10 rounded-[1rem] p-8 my-8">
+            <img src="/assets/noakhali.png" alt="" class="card-img md:w-1/2">
+            <div class="flex flex-col items-start gap-6 md:w-1/2 md:justify-center">
+                <div class="inline-flex items-center gap-2 bg-[#111111]/5 py-2 px-3 rounded-lg">
+                    <img src="/assets/coin.png" alt="" class="h-4 w-4">
+                    <div class="flex gap-1 text-[#111111]/70 text-base font-normal">
+                        <div>0</div>
+                        <div>BDT</div>
+                    </div>
+                </div>
+                <h2>
+                    Donate for Flood at Noakhali, Bangladesh
+                </h2>
+                <p>
+                    The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation
+                    will help provide essential supplies and to those affected by this disaster. Every contribution, big
+                    or small, makes difference. Please join us in supporting the relief efforts and making a positive
+                    impact on the lives of those in need.
+                </p>
+                <form class="space-y-4 w-full">
+                    <input type="text" placeholder="Write Donation Amount"
+                        class="input input-bordered w-full text-base font-light" />
+                    <button type="submit"
+                        class="px-6 pt-2 pb-3 bg-primary color-[#111111] font-semibold text-xl border border-white rounded-lg w-full">Donate
+                        Now</button>
+                </form>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row gap-6 border border-[#111111]/10 rounded-[1rem] p-8 my-8">
+            <img src="/assets/feni.png" alt="" class="card-img md:w-1/2">
+            <div class="flex flex-col items-start gap-6 md:w-1/2 md:justify-center">
+                <div class="inline-flex items-center gap-2 bg-[#111111]/5 py-2 px-3 rounded-lg">
+                    <img src="/assets/coin.png" alt="" class="h-4 w-4">
+                    <div class="flex gap-1 text-[#111111]/70 text-base font-normal">
+                        <div>0</div>
+                        <div>BDT</div>
+                    </div>
+                </div>
+                <h2>
+                    Donate for Flood Relief in Feni,Bangladesh
+                </h2>
+                <p>
+                    The recent floods in Feni have devastated local communities, leading to severe disruption and loss.
+                    Your generous donation will help provide immediate aid, including food, clean water, and medical
+                    supplies, to those affected by this calamity. Together, we can offer crucial support and help
+                    rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real
+                    difference. Please consider donating today to assist those in urgent need.
+                </p>
+                <form class="space-y-4 w-full">
+                    <input type="text" placeholder="Write Donation Amount"
+                        class="input input-bordered w-full text-base font-light" />
+                    <button type="submit"
+                        class="px-6 pt-2 pb-3 bg-primary color-[#111111] font-semibold text-xl border border-white rounded-lg w-full">Donate
+                        Now</button>
+                </form>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row gap-6 border border-[#111111]/10 rounded-[1rem] p-8 my-8">
+            <img src="/assets/quota-protest.png" alt="" class="card-img md:w-1/2">
+            <div class="flex flex-col items-start gap-6 md:w-1/2 md:justify-center">
+                <div class="inline-flex items-center gap-2 bg-[#111111]/5 py-2 px-3 rounded-lg">
+                    <img src="/assets/coin.png" alt="" class="h-4 w-4">
+                    <div class="flex gap-1 text-[#111111]/70 text-base font-normal">
+                        <div>0</div>
+                        <div>BDT</div>
+                    </div>
+                </div>
+                <h2>
+                    Aid for Injured in the Quota Movement
+                </h2>
+                <p>
+                    The recent Quota movement has resulted in numerous injuries and significant hardship for many
+                    individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary
+                    supplies to those affected. By contributing, you help ensure that injured individuals receive the
+                    care and support they need during this challenging time. Every donation plays a vital role in
+                    alleviating their suffering and aiding in their recovery. Please consider making a donation to
+                    support these brave individuals in their time of need.
+                </p>
+                <form class="space-y-4 w-full">
+                    <input type="text" placeholder="Write Donation Amount"
+                        class="input input-bordered w-full text-base font-light" />
+                    <button type="submit"
+                        class="px-6 pt-2 pb-3 bg-primary color-[#111111] font-semibold text-xl border border-white rounded-lg w-full">Donate
+                        Now</button>
+                </form>
+            </div>
+        </div>
     </main>
-    <footer>
+    <footer class="h-[150px] bg-[#F9F7F3]">
 
     </footer>
     <script>
