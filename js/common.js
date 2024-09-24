@@ -32,10 +32,10 @@ function handleDonation(btnID, donateTotalID, donateInputId) {
         let donationValue = getDonationValue(donateInputId)
         let donateTotal = getDonationTotal(donateTotalID)
         if (balance < donationValue) {
-            alert('No money left.')
+            alert('Donation amount greater than current balance.')
             return
         }
-        if (isNaN(donationValue) || isNaN(donateTotal)) {
+        if (isNaN(donationValue) || isNaN(donateTotal) || donationValue < 0) {
             alert('Invalid input Amount.')
             return
         }
@@ -48,4 +48,10 @@ function handleDonation(btnID, donateTotalID, donateInputId) {
         document.getElementById(donateInputId).value = ""
         document.getElementById('modal').showModal()
     })
+}
+
+function showPagesByID(id) {
+    document.getElementById('donation').classList.add('hidden')
+    document.getElementById('history').classList.add('hidden')
+    document.getElementById(id).classList.remove('hidden')
 }
