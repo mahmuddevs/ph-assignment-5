@@ -21,7 +21,7 @@
     <header id="navbar">
         <div id="nav-top" class="py-6 bg-[#F9F7F3]">
             <div
-                class="w-11/12 md:container xl:w-8/12 mx-auto flex flex-col md:flex-row items-center md:justify-between gap-4 md:gap-0">
+                class="w-11/12 md:container xl:w-8/12 mx-auto flex flex-col md:flex-row items-center md:justify-between gap-2 md:gap-0">
                 <button id="blog"
                     class="px-3 md:px-6 pt-1 pb-2 bg-primary color-[#111111] font-semibold text-xl border border-white rounded-lg">Blog</button>
                 <div class="flex items-center gap-4">
@@ -37,7 +37,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex justify-center gap-4 mt-0 md:mt-12 pb-8">
+        <div class="flex justify-center gap-4 mt-4 md:mt-12 pb-4 md:pb-8">
             <button id="donation-page"
                 class="px-6 pt-2 pb-3 bg-primary color-[#111111] font-semibold text-xl border border-[#111111]/30 hover:bg-primary/90 transition-colors rounded-lg">Donation</button>
             <button id="history-page"
@@ -61,7 +61,7 @@
         </dialog>
         <div id="pages">
             <div id="donation">
-                <div class="flex flex-col md:flex-row gap-6 border border-[#111111]/10 rounded-[1rem] p-8">
+                <div class="flex flex-col md:flex-row gap-6 border border-[#111111]/10 rounded-2xl p-8">
                     <img src="./assets/noakhali.png" alt="" class="card-img md:w-1/2">
                     <div class="flex flex-col items-start gap-6 md:w-1/2 md:justify-center">
                         <div class="inline-flex items-center gap-2 bg-[#111111]/5 py-2 px-3 rounded-lg">
@@ -93,7 +93,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="flex flex-col md:flex-row gap-6 border border-[#111111]/10 rounded-[1rem] p-8 my-8">
+                <div class="flex flex-col md:flex-row gap-6 border border-[#111111]/10 rounded-2xl p-8 my-8">
                     <img src="./assets/feni.png" alt="" class="card-img md:w-1/2">
                     <div class="flex flex-col items-start gap-6 md:w-1/2 md:justify-center">
                         <div class="inline-flex items-center gap-2 bg-[#111111]/5 py-2 px-3 rounded-lg">
@@ -127,7 +127,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="flex flex-col md:flex-row gap-6 border border-[#111111]/10 rounded-[1rem] p-8 my-8">
+                <div class="flex flex-col md:flex-row gap-6 border border-[#111111]/10 rounded-2xl p-8 my-8 mb-">
                     <img src="./assets/quota-protest.png" alt="" class="card-img md:w-1/2">
                     <div class="flex flex-col items-start gap-6 md:w-1/2 md:justify-center">
                         <div class="inline-flex items-center gap-2 bg-[#111111]/5 py-2 px-3 rounded-lg">
@@ -164,8 +164,8 @@
                     </div>
                 </div>
             </div>
-            <div id="history" class="hidden">
-                something
+            <div id="history" class="">
+
             </div>
         </div>
     </main>
@@ -187,14 +187,16 @@
                     addBase(
                         {
                             'h2': { color: '#111111', fontSize: '20px', fontWeight: 700 },
-                            'p': { fontSize: '1rem', fontWeight: 300, lineHeight: "26px" }
+                            'p': { fontSize: '1rem', fontWeight: 300, lineHeight: "26px", color: 'rgba(17, 17, 17, 0.7)' }
                         }
                     )
                 }
             ],
         }
     </script>
-    <script src="./js/common.js"></script>
+    <script src="./js/utilities.js"></script>
+    <script src="./js/calculations.js"></script>
+    <script src="./js/handleDonation.js"></script>
     <script src="./js/index.js"></script>
 </body>
 

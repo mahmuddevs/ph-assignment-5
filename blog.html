@@ -1,14 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate Bangladesh - Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    blog page
+<body style="font-family: Lexend, sans-serif">
+    <header id="navbar">
+        <div id="nav-top" class="py-6 bg-[#F9F7F3]">
+            <div
+                class="w-11/12 md:container xl:w-8/12 mx-auto flex flex-col md:flex-row items-center md:justify-between gap-2 md:gap-0">
+                <button id="home"
+                    class="px-3 md:px-6 pt-1 pb-2 bg-primary color-[#111111] font-semibold text-xl border border-white rounded-lg">Home</button>
+                <div class="flex items-center gap-4">
+                    <img src="./assets/logo.png" alt="">
+                    <h2 class="font-semibold">Donate Bangladesh</h2>
+                </div>
+                <div class="flex items-center gap-4">
+                    <img src="./assets/coin.png" alt="">
+                    <div class="flex gap-2 text-[#111111]/70 text-xl font-medium">
+                        <div id="balance">5500</div>
+                        <div>BDT</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="w-11/12 md:container xl:w-8/12 mx-auto">
+        <div class="flex items-center my-8">
+            <h1 class="text-3xl font-bold">Important FAQ</h1>
+            <img src="/assets/message.png" alt="" class="animate-shake origin-bottom-left h-14 w-14 relative -top-2">
+        </div>
+        <div class="mb-8">
+            <div class="join join-vertical w-full">
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" checked="checked" />
+                    <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                    <div class="collapse-content">
+                        <p>The Document Object Model (DOM) is a tree-like structure that represents a webpage, allowing
+                            JavaScript to modify content, styles, and elements dynamically. It treats each part of the
+                            page as an object for easy interaction.</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium">How do you select an element from DOM?</div>
+                    <div class="collapse-content">
+                        <p>You can select an element from the DOM using methods like:</p>
+                        <ul class="list-decimal ms-4">
+                            <li>document.getElementById("id") - Selects an element by its unique ID.</li>
+                            <li>document.getElementsByClassName("className") - Selects all elements with the specified
+                                class name.</li>
+                            <li>document.getElementsByTagName("tagName") - Selects all elements with the specified tag
+                                name.</li>
+                            <li>document.querySelector("selector") - Selects the first element that matches a CSS
+                                selector.</li>
+                            <li>document.querySelectorAll("selector") - Selects all elements that match a CSS selector.
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium">What is event delegation in the context of DOM, and
+                        why it is useful?</div>
+                    <div class="collapse-content">
+                        <p>Event delegation is a method where one event listener is added to a parent element. This
+                            listener can handle events for all its child elements. When a child element triggers an
+                            event, it moves up to the parent, which can then respond to it. This technique helps boost
+                            performance by cutting down on the number of event listeners needed and makes code easier to
+                            manage, especially with elements that are added dynamically.</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and
+                        styles using the DOM?</div>
+                    <div class="collapse-content">
+                        <p>You can change an element's attributes and styles with the DOM by getting the element using
+                            methods like document.getElementById() or document.querySelector().
+
+                            To update attributes, use element.setAttribute('attributeName', 'value') or set it directly
+                            with element.attributeName = 'value'. For styles, adjust the style property, like
+                            element.style.propertyName = 'value'. This lets you change how elements look and act on a
+                            webpage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="h-[150px] bg-[#F9F7F3]">
+
+    </footer>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        primary: '#B4F461'
+                    },
+                    keyframes: {
+                        shake: {
+                            '0%, 20': { transform: 'rotate(deg)' },
+                            '25%, 50%': { transform: 'rotate(-5deg)' },
+                            '50%, 75%': { transform: 'rotate(5deg)' },
+                            '75%, 100%': { transform: 'rotate(0deg)' },
+                        },
+                    },
+                    animation: {
+                        shake: 'shake 1.5s ease-in-out infinite',
+                    },
+                }
+            },
+            plugins: [
+                function ({ addBase }) {
+                    addBase(
+                        {
+                            'h2': { color: '#111111', fontSize: '20px', fontWeight: 700 },
+                            'p': { fontSize: '1rem', fontWeight: 300, lineHeight: "26px", color: 'rgba(17, 17, 17, 0.7)' },
+                            'li': { fontSize: '1rem', fontWeight: 300, lineHeight: "26px", color: 'rgba(17, 17, 17, 0.7)' }
+                        }
+                    )
+                }
+            ],
+        }
+    </script>
+    <script src="./js/utilities.js"></script>
+    <script src="./js/calculations.js"></script>
+    <script src="./js/handleDonation.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

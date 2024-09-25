@@ -13,9 +13,18 @@ window.addEventListener("scroll", function () {
     }
 })
 
+
+const homeBtn = document.getElementById('home')
+
+if (homeBtn) {
+    homeBtn.addEventListener('click', function () {
+        window.location.href = '/';
+    })
+}
 document.getElementById('blog').addEventListener('click', function () {
     window.location.href = 'blog.html';
 })
+
 
 handleDonation('donate1-btn', 'donate1-total', 'donate1-input')
 handleDonation('donate2-btn', 'donate2-total', 'donate2-input')
@@ -33,3 +42,11 @@ document.getElementById('history-page').addEventListener('click', function (e) {
     document.getElementById('donation-page').classList.add('hover:bg-gray-300')
     showPagesByID('history')
 })
+
+
+
+
+// <div div class="border rounded-2xl p-8 space-y-4" >
+//     <h3>00 Taka is Donated for --- heading</h3>
+//     <p>Date: current datae (timeZone)</p>
+// </div >
