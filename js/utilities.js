@@ -12,12 +12,13 @@ function showPagesByID(id) {
     document.getElementById(id).classList.remove('hidden')
 }
 
-function getHeading(id) {
+function getHeadingUsingParent(id) {
     const parent = document.getElementById(id).parentNode.parentNode
     let heading = parent.nextElementSibling.textContent
     return heading
 }
 
+//Creating elements and appending
 function addHistory(heading, amount) {
     const date = new Date()
     let history = document.createElement('div')

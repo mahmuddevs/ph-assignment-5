@@ -13,8 +13,8 @@ function handleDonation(btnID, donateTotalID, donateInputId) {
             alert('Invalid input Amount.')
             return
         }
-
-        let heading = getHeading(donateTotalID)
+        //Getting headings
+        let heading = getHeadingUsingParent(donateTotalID)
         let totalDonation = calculateTotalDonation(donateTotal, donationValue)
         let remainingBalance = calculateCurrentBalance(balance, donationValue)
 
@@ -22,6 +22,7 @@ function handleDonation(btnID, donateTotalID, donateInputId) {
         document.getElementById('balance').innerText = remainingBalance
         document.getElementById(donateInputId).value = ""
         document.getElementById('modal').showModal()
+        //Adds History In History Page
         addHistory(heading, donationValue)
     })
 }

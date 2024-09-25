@@ -13,7 +13,7 @@
 </head>
 
 <body style="font-family: Lexend, sans-serif">
-    <header id="navbar">
+    <header id="navbar" class="z-100">
         <div id="nav-top" class="py-6 bg-[#F9F7F3]">
             <div
                 class="w-11/12 md:container xl:w-8/12 mx-auto flex flex-col md:flex-row items-center md:justify-between gap-2 md:gap-0">
@@ -33,14 +33,14 @@
             </div>
         </div>
     </header>
-    <main class="w-11/12 md:container xl:w-8/12 mx-auto">
+    <main class="w-11/12 md:container xl:w-8/12 mx-auto h-[100vh] md:h-[70vh]">
         <div class="flex items-center my-8">
             <h1 class="text-3xl font-bold">Important FAQ</h1>
             <img src="./assets/message.png" alt="" class="animate-shake origin-bottom-left h-14 w-14 relative -top-2">
         </div>
         <div class="mb-8">
             <div class="join join-vertical w-full">
-                <div class="collapse collapse-arrow join-item border-base-300 border">
+                <div class="collapse collapse-arrow join-item border-base-300 border -z-10">
                     <input type="radio" name="my-accordion-4" checked="checked" />
                     <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
                     <div class="collapse-content">
@@ -49,52 +49,48 @@
                             page as an object for easy interaction.</p>
                     </div>
                 </div>
-                <div class="collapse collapse-arrow join-item border-base-300 border">
+
+                <div class="collapse collapse-arrow join-item border-base-300 border -z-10">
                     <input type="radio" name="my-accordion-4" />
                     <div class="collapse-title text-xl font-medium">How do you select an element from DOM?</div>
                     <div class="collapse-content">
-                        <p>You can select an element from the DOM using methods like:</p>
-                        <ul class="list-decimal ms-4">
-                            <li>document.getElementById("id") - Selects an element by its unique ID.</li>
-                            <li>document.getElementsByClassName("className") - Selects all elements with the specified
-                                class name.</li>
-                            <li>document.getElementsByTagName("tagName") - Selects all elements with the specified tag
-                                name.</li>
-                            <li>document.querySelector("selector") - Selects the first element that matches a CSS
-                                selector.</li>
-                            <li>document.querySelectorAll("selector") - Selects all elements that match a CSS selector.
-                            </li>
-                        </ul>
-
-                    </div>
-                </div>
-                <div class="collapse collapse-arrow join-item border-base-300 border">
-                    <input type="radio" name="my-accordion-4" />
-                    <div class="collapse-title text-xl font-medium">What is event delegation in the context of DOM, and
-                        why it is useful?</div>
-                    <div class="collapse-content">
-                        <p>Event delegation is a method where one event listener is added to a parent element. This
-                            listener can handle events for all its child elements. When a child element triggers an
-                            event, it moves up to the parent, which can then respond to it. This technique helps boost
-                            performance by cutting down on the number of event listeners needed and makes code easier to
-                            manage, especially with elements that are added dynamically.</p>
-                    </div>
-                </div>
-                <div class="collapse collapse-arrow join-item border-base-300 border">
-                    <input type="radio" name="my-accordion-4" />
-                    <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and
-                        styles using the DOM?</div>
-                    <div class="collapse-content">
-                        <p>You can change an element's attributes and styles with the DOM by getting the element using
-                            methods like document.getElementById() or document.querySelector().
-
-                            To update attributes, use element.setAttribute('attributeName', 'value') or set it directly
-                            with element.attributeName = 'value'. For styles, adjust the style property, like
-                            element.style.propertyName = 'value'. This lets you change how elements look and act on a
-                            webpage.</p>
+                        <p>You can select an element from the DOM using methods like: <br>
+                            1. .getElementById("id")<br>
+                            2. .getElementsByClassName("className")<br>
+                            3. .getElementsByTagName("tagName")<br>
+                            4. .querySelector("selector")<br>
+                            5. .querySelectorAll("selector")
+                        </p>
                     </div>
                 </div>
             </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border -z-10">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of DOM, and
+                    why it is useful?</div>
+                <div class="collapse-content">
+                    <p>Event delegation is a method where one event listener is added to a parent element. This
+                        listener can handle events for all its child elements. When a child element triggers an
+                        event, it moves up to the parent, which can then respond to it. This technique helps boost
+                        performance by cutting down on the number of event listeners needed and makes code easier to
+                        manage, especially with elements that are added dynamically.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border -z-10">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and
+                    styles using the DOM?</div>
+                <div class="collapse-content">
+                    <p>You can change an element's attributes and styles with the DOM by getting the element using
+                        methods like document.getElementById() or document.querySelector().
+
+                        To update attributes, use element.setAttribute('attributeName', 'value') or set it directly
+                        with element.attributeName = 'value'. For styles, adjust the style property, like
+                        element.style.propertyName = 'value'. This lets you change how elements look and act on a
+                        webpage.</p>
+                </div>
+            </div>
+        </div>
         </div>
     </main>
     <footer class="h-[150px] bg-[#F9F7F3]">
